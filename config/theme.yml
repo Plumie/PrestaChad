@@ -1,10 +1,10 @@
-name: custom2
-display_name: custom2
-version: 2.1.0
+name: custom
+display_name: Custom Namkin theme
+version: 1.0.0
 author:
-  name: "PrestaShop SA and Contributors"
-  email: "contact@prestashop.com"
-  url: "https://www.prestashop-project.org"
+  name: "Namkin"
+  email: "namkin@namkin.dev"
+  url: "https://namkin.fr"
 
 meta:
   compatibility:
