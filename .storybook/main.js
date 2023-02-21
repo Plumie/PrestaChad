@@ -30,8 +30,11 @@ module.exports = {
     config.module.rules.push({
       test: /\.tpl|\.smarty$/,
       loader: "jsmart-loader",
-    },
-    )
+    }), 
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, './../'),
+    }
     return config;
   }
 }
