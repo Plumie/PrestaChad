@@ -1,3 +1,15 @@
 .button {
-  @apply bg-green-200 p-4;
+  @apply bg-blue-600 text-white px-8 py-2 rounded-md w-fit hover:bg-blue-600/80;
+
+  &--danger {
+    @apply bg-red-600
+  }
+
+  &--warning {
+    @apply bg-yellow-600
+  } 
+
+  &--success {
+    @apply bg-green-600
+  }
 }

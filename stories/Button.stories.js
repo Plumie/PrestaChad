@@ -1,10 +1,17 @@
-import render from './Button.js';
+import {Default, Danger, Warning, Success} from './Button.js';
 
 export default {
-  title: 'Example/Button', 
+  title: 'Atoms/Button', 
 }
 
-const Template = (args) => render(args);
+const templates = {
+  default: (args) => Default(args),
+  danger: (args) => Danger(args), 
+  warning: (args) => Warning(args), 
+  success: (args) => Success(args), 
+}
 
-
-export const Default = Template.bind({});
+export const DefaultButton = templates.default.bind({});
+export const DangerButton = templates.danger.bind({});
+export const WarningButton = templates.warning.bind({});
+export const SuccessButton = templates.success.bind({});
