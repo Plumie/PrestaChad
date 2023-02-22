@@ -2,8 +2,10 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import './gigachad.js';
 import browserSync from 'browser-sync';
+import dotenv from 'dotenv';
 
-require('dotenv').config();
+dotenv.config();
+dotenv.config({ path: `.env.local`, override: true });
 
 export default defineConfig({
   build:  {
@@ -31,7 +33,8 @@ export default defineConfig({
 })
 
 browserSync({
-  proxy: 'http://localhost:8888/prestashop',
+  proxy: process.env.BROWSERSYNC_PROXY,
+  port: process.env.BROWSERSYNC_PORT,
   files: [
       resolve(__dirname, '**/*.tpl'),
       resolve(__dirname, 'css/**/*.{css,scss}'), 
