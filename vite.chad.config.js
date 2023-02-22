@@ -8,10 +8,9 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'scripts/main.js'),
       name: 'custom',
-      format: ['js']
+      format: ['es']
     },
     rollupOptions: {
-      external: ['prestashop', 'expose-loader'],
       output: {
         manualChunks: false,
         assetFileNames: '[ext]/theme[extname]',

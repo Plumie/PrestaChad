@@ -1,7 +1,7 @@
 {
-  "name": "prestashop-classic-dev-tools",
+  "name": "prestachad",
   "version": "1.0.0",
-  "description": "Tools to help while developing the Classic theme",
+  "description": "Modern theme boilerplate for PrestaShop",
   "main": "index.js",
   "scripts": {
     "scss-lint": "stylelint \"**/*.scss\" --formatter verbose",
@@ -12,8 +12,8 @@
     "build-storybook": "build-storybook",
     "vite-theme": "vite build -c vite.config.js",
     "vite-theme-watch": "vite build -c vite.config.js --watch -m development",
-    "vite-custom": "vite build -c vite.namkin.config.js",
-    "vite-custom-watch": "vite build -c vite.namkin.config.js --watch -m development",
+    "vite-custom": "vite build -c vite.chad.config.js",
+    "vite-custom-watch": "vite build -c vite.chad.config.js --watch -m development",
     "vite-watch": "npm run vite-theme && npm run vite-custom-watch",
     "vite-build": "npm run vite-theme && npm run vite-custom"
   },
