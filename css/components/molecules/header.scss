@@ -1,0 +1,7 @@
+.header {
+  background-color: white;
+
+  &__container {
+    @apply container mx-auto;
+  }
+}
