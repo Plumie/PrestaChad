@@ -5,8 +5,8 @@ export default defineConfig({
   build: {
     outDir: resolve(__dirname, 'assets'),
     lib: {
-      entry: resolve(__dirname, 'js/theme.js'),
-      name: 'theme',
+      entry: resolve(__dirname, 'scripts/main.js'),
+      name: 'custom',
       format: ['js']
     },
     rollupOptions: {
@@ -14,8 +14,8 @@ export default defineConfig({
       output: {
         manualChunks: false,
         assetFileNames: '[ext]/theme[extname]',
-        chunkFileNames: 'js/theme.js',
-        entryFileNames: 'js/theme.js',
+        chunkFileNames: 'js/custom.js',
+        entryFileNames: 'js/custom.js',
       },
     },
   }

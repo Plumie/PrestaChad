@@ -12,7 +12,7 @@
     "lint-fix": "eslint -c .eslintrc.js --ext .js,.vue ./js --fix",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "vite-watch": "vite build --watch --mode development",
+    "vite-watch": "vite build -c vite.namkin.config.js --watch --mode development",
     "vite-build": "vite build"
   },
   "author": "PrestaShop",
