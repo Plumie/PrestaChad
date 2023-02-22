@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .header {
-    @apply bg-blue-600;
+    @apply bg-blue-800;
 }
 
 // Components
 
 // Atoms
 
-@import "./components/atoms/button.scss"
+@import "./components/atoms/button.scss";

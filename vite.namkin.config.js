@@ -4,6 +4,7 @@ import { resolve } from 'path';
 export default defineConfig({
   build: {
     outDir: resolve(__dirname, 'assets'),
+    emptyOutDir: false,
     lib: {
       entry: resolve(__dirname, 'scripts/main.js'),
       name: 'custom',

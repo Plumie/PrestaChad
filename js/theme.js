@@ -26,6 +26,8 @@
 // import '../css/theme.scss';
 // import '../css/error.scss';
 
+console.log('bep');
+
 import 'bootstrap/dist/js/bootstrap.min';
 import 'flexibility';
 import 'bootstrap-touchspin';
