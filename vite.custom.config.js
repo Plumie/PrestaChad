@@ -1,25 +1,12 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import './gigachad.js';
+import browserSync from 'browser-sync';
 
-import VitePluginBrowserSync from 'vite-plugin-browser-sync'
+require('dotenv').config();
 
 export default defineConfig({
-  plugins: [
-    VitePluginBrowserSync({
-      open: true,
-      proxy: {
-        target: 'http://localhost/prestashop',
-      },
-      src: ['assets/**/*', 'templates/**/*'],
-      watchOptions: {
-        usePolling: true,
-        interval: 500,
-      },
-      ghostMode: false,
-      ui: true,
-    }),
-  ],
-  build: {
+  build:  {
     outDir: resolve(__dirname, 'assets'),
     emptyOutDir: false,
     lib: {
@@ -41,4 +28,13 @@ export default defineConfig({
       '@' : resolve(__dirname, './')
     },
   },
+})
+
+browserSync({
+  proxy: 'http://localhost:8888/prestashop',
+  files: [
+      resolve(__dirname, '**/*.tpl'),
+      resolve(__dirname, 'css/**/*.{css,scss}'), 
+      resolve(__dirname, 'scripts/**/*.js') 
+  ]
 });

@@ -35,6 +35,7 @@
     "bootstrap": "4.0.0-alpha.5",
     "bootstrap-touchspin": "^3.1.1",
     "bourbon": "^4.2.6",
+    "browser-sync": "^2.27.11",
     "css-loader": "^6.7.1",
     "csso-webpack-plugin": "^2.0.0-beta.3",
     "esbuild-loader": "^2.15.1",
@@ -61,10 +62,10 @@
     "stylelint-config-prestashop": "^1.0.5",
     "tailwindcss": "^3.2.7",
     "tether": "^1.1.1",
-    "velocity-animate": "^1.2.3",
-    "vite-plugin-browser-sync": "^1.0.2"
+    "velocity-animate": "^1.2.3"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "jsmart": "^4.0.0",
     "jsmart-loader": "^2.0.0",
     "prestashop": "^0.0.1",
