@@ -1,4 +1,4 @@
-import Button from  '../templates/components/atoms/button.tpl'
+import Button from './button.tpl'
 
 const Default = () => Button({
   content: 'Default Button'
