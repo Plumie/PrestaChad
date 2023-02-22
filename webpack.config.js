@@ -32,7 +32,7 @@ const LicensePlugin = require('webpack-license-plugin');
 let config = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
   entry: {
-    theme: ['./scripts/theme.js', './css/theme.scss'],
+    theme: ['./js/theme.js', './css/theme.scss'],
     error: ['./css/error.scss'],
   },
   output: {

@@ -23,8 +23,8 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  */
 /* eslint-disable */
-import '../css/theme.scss';
-import '../css/error.scss';
+// import '../css/theme.scss';
+// import '../css/error.scss';
 
 import 'bootstrap/dist/js/bootstrap.min';
 import 'flexibility';
