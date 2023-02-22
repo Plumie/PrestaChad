@@ -35,3 +35,4 @@ npm run vite-build
 - Associated stories are located in the corresponding /stories folder
 - CSS files are located in the /css folder
 - Custom scripts are located in the /scripts folder while default prestashop ones are in the /js folder
+- Default layout was created for bootstrap but tailwind is provided by default so feel free to replace existing classes to fit your need
