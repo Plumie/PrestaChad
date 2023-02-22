@@ -19,5 +19,10 @@ export default defineConfig({
         entryFileNames: 'js/theme.js',
       },
     },
-  }
+  },
+  resolve:{
+    alias:{
+      '@' : resolve(__dirname, './')
+    },
+  },
 });
