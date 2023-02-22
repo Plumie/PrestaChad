@@ -1,3 +1,4 @@
+
 {extends file=$layout}
 
 {block name='content'}
