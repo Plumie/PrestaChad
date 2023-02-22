@@ -1,7 +1,22 @@
 import Button from  '../templates/components/atoms/button.tpl'
 
-const render = () => {
-  return Button();
-}
+const Default = () => Button({
+  content: 'Default Button'
+});
 
-export default render;
+const Danger = () => Button({
+  content: 'Danger Button',
+  theme: 'danger'
+});
+
+const Warning = () => Button({
+  content: 'Warning Button',
+  theme: 'warning'
+});
+
+const Success  = () => Button({
+  content: 'Success Button',
+  theme: 'success'
+});
+
+export {Default, Danger, Warning, Success}; 

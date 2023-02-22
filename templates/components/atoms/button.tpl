@@ -1,1 +1,3 @@
-<div class="bg-blue-600 p-4">test</div>
+<button class="button button--{$theme|default:'default'}">
+  {$content}
+</button>
