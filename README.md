@@ -1,6 +1,6 @@
 # PrestaChad - A modern Prestashop theme boilerplate
 
-![PrestaChad](https://cdn.jsdelivr.net/gh/Plumie/prestashop-theme-boilerplate/img/prestachad.jpg)
+![PrestaChad](https://cdn.jsdelivr.net/gh/Plumie/PrestaChad/img/prestachad.jpg)
 
 ## Installation
 
@@ -31,7 +31,7 @@ npm run vite-build
 
 ## Architecture
 
-- Components are following the atomic design guidelines and are located in the /templates/components folder
+- Components are created following atomic design's guidelines and are located in the /templates/components folder
 - Associated stories are located in the corresponding /stories folder
 - CSS files are located in the /css folder
 - Custom scripts are located in the /scripts folder while default prestashop ones are in the /js folder
