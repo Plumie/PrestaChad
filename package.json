@@ -61,7 +61,8 @@
     "stylelint-config-prestashop": "^1.0.5",
     "tailwindcss": "^3.2.7",
     "tether": "^1.1.1",
-    "velocity-animate": "^1.2.3"
+    "velocity-animate": "^1.2.3",
+    "vite-plugin-browser-sync": "^1.0.2"
   },
   "dependencies": {
     "jsmart": "^4.0.0",

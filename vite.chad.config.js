@@ -1,7 +1,24 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
+import VitePluginBrowserSync from 'vite-plugin-browser-sync'
+
 export default defineConfig({
+  plugins: [
+    VitePluginBrowserSync({
+      open: true,
+      proxy: {
+        target: 'http://localhost/prestashop',
+      },
+      src: ['assets/**/*', 'templates/**/*'],
+      watchOptions: {
+        usePolling: true,
+        interval: 500,
+      },
+      ghostMode: false,
+      ui: true,
+    }),
+  ],
   build: {
     outDir: resolve(__dirname, 'assets'),
     emptyOutDir: false,
@@ -18,5 +35,5 @@ export default defineConfig({
         entryFileNames: 'js/custom.js',
       },
     },
-  }
+  },
 });

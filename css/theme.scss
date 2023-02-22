@@ -6,4 +6,8 @@
 
 // Atoms
 
+body {
+  background: blue;
+}
+
 @import "./components/atoms/button.scss";
