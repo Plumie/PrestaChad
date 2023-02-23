@@ -8,14 +8,14 @@
     "scss-fix": "stylelint \"**/*.scss\" --fix",
     "lint": "eslint -c .eslintrc.js --ext .js,.vue ./js",
     "lint-fix": "eslint -c .eslintrc.js --ext .js,.vue ./js --fix",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "vite-theme": "vite build -c vite.theme.config.js",
-    "vite-theme-watch": "vite build -c vite.theme.config.js --watch -m development",
-    "vite-custom": "vite build -c vite.custom.config.js",
-    "vite-custom-watch": "vite build -c vite.custom.config.js --watch -m development",
-    "vite-watch": "npm run vite-theme && npm run vite-custom-watch",
-    "vite-build": "npm run vite-theme && npm run vite-custom"
+    "storybook:serve": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
+    "vite:watch": "npm run vite:build:theme && npm run vite:watch:custom",
+    "vite:watch:theme": "vite build -c vite.theme.config.js --watch -m development",
+    "vite:watch:custom": "vite build -c vite.custom.config.js --watch -m development",
+    "vite:build": "npm run vite:build:theme && npm run vite:build:custom",
+    "vite:build:theme": "vite build -c vite.theme.config.js",
+    "vite:build:custom": "vite build -c vite.custom.config.js"
   },
   "author": "PrestaShop",
   "license": "AFL-3.0",
@@ -35,6 +35,7 @@
     "bootstrap": "4.0.0-alpha.5",
     "bootstrap-touchspin": "^3.1.1",
     "bourbon": "^4.2.6",
+    "browser-sync": "^2.27.11",
     "css-loader": "^6.7.1",
     "csso-webpack-plugin": "^2.0.0-beta.3",
     "esbuild-loader": "^2.15.1",
@@ -66,6 +67,7 @@
     "vite-plugin-externals": "^0.6.2"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "jsmart": "^4.0.0",
     "jsmart-loader": "^2.0.0",
     "prestashop": "^0.0.1",
