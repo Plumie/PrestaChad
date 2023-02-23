@@ -8,13 +8,13 @@ dotenv.config();
 dotenv.config({ path: `.env.local`, override: true });
 
 export default defineConfig({
-  build:  {
+  build: {
     outDir: resolve(__dirname, 'assets'),
     emptyOutDir: false,
     lib: {
       entry: resolve(__dirname, 'scripts/main.js'),
       name: 'custom',
-      format: ['es']
+      format: ['es'],
     },
     rollupOptions: {
       output: {
@@ -25,19 +25,22 @@ export default defineConfig({
       },
     },
   },
-  resolve:{
-    alias:{
-      '@' : resolve(__dirname, './')
+  resolve: {
+    alias: {
+      '@scripts': resolve(__dirname, './scripts'),
+      '@': resolve(__dirname, './'),
     },
   },
-})
+});
 
 browserSync({
+  open: false,
+  host: 'localhost',
   proxy: process.env.BROWSERSYNC_PROXY,
   port: process.env.BROWSERSYNC_PORT,
   files: [
-      resolve(__dirname, '**/*.tpl'),
-      resolve(__dirname, 'css/**/*.{css,scss}'), 
-      resolve(__dirname, 'scripts/**/*.js') 
-  ]
+    resolve(__dirname, '**/*.tpl'),
+    resolve(__dirname, 'css/**/*.{css,scss}'),
+    resolve(__dirname, 'scripts/**/*.js'),
+  ],
 });
