@@ -2,6 +2,10 @@
 
 ![PrestaChad](https://cdn.jsdelivr.net/gh/Plumie/PrestaChad/img/prestachad.jpg)
 
+## Requirements
+- Prestashop 1.7.6+
+- Node.js 16.0.0+
+
 ## Installation
 
 Run the following command :

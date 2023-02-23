@@ -15,7 +15,7 @@
     "vite:watch:custom": "vite build -c vite.custom.config.js --watch -m development",
     "vite:build": "npm run vite:build:theme && npm run vite:build:custom",
     "vite:build:theme": "vite build -c vite.theme.config.js",
-    "vite:build:custom": "vite build -c vite.custom.config.js" 
+    "vite:build:custom": "vite build -c vite.custom.config.js"
   },
   "author": "PrestaShop",
   "license": "AFL-3.0",
@@ -62,7 +62,9 @@
     "stylelint-config-prestashop": "^1.0.5",
     "tailwindcss": "^3.2.7",
     "tether": "^1.1.1",
-    "velocity-animate": "^1.2.3"
+    "velocity-animate": "^1.2.3",
+    "vite-plugin-browser-sync": "^1.0.2",
+    "vite-plugin-externals": "^0.6.2"
   },
   "dependencies": {
     "dotenv": "^16.0.3",

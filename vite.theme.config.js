@@ -1,7 +1,16 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
+import { viteExternalsPlugin } from 'vite-plugin-externals';
+
 export default defineConfig({
+  plugins: [
+    viteExternalsPlugin({
+      prestashop: 'prestashop',
+      jquery: 'jQuery',
+      $: '$',
+    })
+  ],
   build: {
     outDir: resolve(__dirname, 'assets'),
     emptyOutDir: false,
@@ -11,7 +20,7 @@ export default defineConfig({
       format: ['js'],
     },
     rollupOptions: {
-      external: ['prestashop', 'expose-loader'],
+      // external: ['prestashop', 'expose-loader', 'jquery', '$'],
       output: {
         manualChunks: false,
         assetFileNames: '[ext]/[name][extname]',
