@@ -17,7 +17,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'js/theme.js'),
       name: 'theme',
-      format: ['js']
+      format: ['js'],
     },
     rollupOptions: {
       // external: ['prestashop', 'expose-loader', 'jquery', '$'],
@@ -29,9 +29,9 @@ export default defineConfig({
       },
     },
   },
-  resolve:{
-    alias:{
-      '@' : resolve(__dirname, './')
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, './'),
     },
   },
 });
