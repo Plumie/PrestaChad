@@ -26,12 +26,12 @@ module.exports = {
   "framework": "@storybook/html",
   "core": {
     "builder": "@storybook/builder-webpack5"
-  }, 
+  },
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.tpl|\.smarty$/,
       loader: "jsmart-loader",
-    }), 
+    }),
     config.resolve.alias = {
       ...config.resolve.alias,
       '@': path.resolve(__dirname, './../'),
