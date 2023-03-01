@@ -1,4 +1,3 @@
-import '@/css/main.scss';
-import '@/css/error.scss';
+import '@scripts/pristine';
 
 import '@scripts/utils/auto-import';

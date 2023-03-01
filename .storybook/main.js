@@ -1,9 +1,10 @@
-const path = require('path'); 
+const path = require('path');
+const { resolve } = require('path');
 
 module.exports = {
   "stories": [
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
+    "../templates/components/**/*.stories.mdx",
+    "../templates/components/**/*.stories.@(js|jsx|ts|tsx)",
   ],
   "addons": [
     "@storybook/addon-links",
@@ -25,15 +26,16 @@ module.exports = {
   "framework": "@storybook/html",
   "core": {
     "builder": "@storybook/builder-webpack5"
-  }, 
+  },
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.tpl|\.smarty$/,
       loader: "jsmart-loader",
-    }), 
+    }),
     config.resolve.alias = {
       ...config.resolve.alias,
       '@': path.resolve(__dirname, './../'),
+      '@scripts': resolve(__dirname, './../scripts'),
     }
     return config;
   }

@@ -1,4 +1,6 @@
-import '@/css/theme.scss'
+import '@scripts/pristine';
+
+import './utils/auto-import';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
