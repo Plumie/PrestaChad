@@ -12,7 +12,7 @@ export default defineConfig({
     outDir: resolve(__dirname, 'assets'),
     emptyOutDir: false,
     lib: {
-      entry: resolve(__dirname, 'scripts/main.js'),
+      entry: resolve(__dirname, '_dev/main.js'),
       name: 'custom',
       format: ['es'],
     },
@@ -27,8 +27,9 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      '@': resolve(__dirname, './_dev'),
+      '@root': resolve(__dirname, './'),
       '@scripts': resolve(__dirname, './scripts'),
-      '@': resolve(__dirname, './'),
     },
   },
 });

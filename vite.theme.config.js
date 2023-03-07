@@ -15,7 +15,7 @@ export default defineConfig({
     outDir: resolve(__dirname, 'assets'),
     emptyOutDir: false,
     lib: {
-      entry: resolve(__dirname, 'js/theme.js'),
+      entry: resolve(__dirname, '_dev/_native/theme.js'),
       name: 'theme',
       format: ['js'],
     },

@@ -1,6 +1,6 @@
 # PrestaChad - A modern Prestashop theme boilerplate
 
-![PrestaChad](https://cdn.jsdelivr.net/gh/Plumie/PrestaChad/img/prestachad.jpg)
+![PrestaChad](https://cdn.jsdelivr.net/gh/Plumie/PrestaChad/_dev/assets/prestachad.jpg)
 
 ## Requirements
 - Prestashop 1.7.6+
