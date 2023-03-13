@@ -23,9 +23,9 @@ export default defineConfig({
       // external: ['prestashop', 'expose-loader', 'jquery', '$'],
       output: {
         manualChunks: false,
-        assetFileNames: '[ext]/[name][extname]',
-        chunkFileNames: 'js/theme.js',
         entryFileNames: 'js/theme.js',
+        chunkFileNames: 'js/theme.js',
+        assetFileNames: '[ext]/theme[extname]',
       },
     },
   },

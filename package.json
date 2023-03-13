@@ -14,8 +14,8 @@
     "vite:watch:theme": "vite build -c vite.theme.config.js --watch -m development",
     "vite:watch:custom": "vite build -c vite.custom.config.js --watch -m development",
     "vite:build": "npm run vite:build:theme && npm run vite:build:custom",
-    "vite:build:theme": "vite build -c vite.theme.config.js",
-    "vite:build:custom": "vite build -c vite.custom.config.js"
+    "vite:build:theme": "vite build -c vite.theme.config.js -m production",
+    "vite:build:custom": "vite build -c vite.custom.config.js -m production"
   },
   "author": "PrestaShop",
   "license": "AFL-3.0",
@@ -68,12 +68,15 @@
     "vite-plugin-externals": "^0.6.2"
   },
   "dependencies": {
+    "@ryanmorr/ready": "^1.4.0",
     "dotenv": "^16.0.3",
     "jsmart": "^4.0.0",
     "jsmart-loader": "^2.0.0",
     "prestashop": "^0.0.1",
     "sprintf-js": "^1.1.2",
     "storybook-addon-sass-postcss": "^0.1.3",
-    "vite": "^4.1.3"
+    "swiper": "^9.1.0",
+    "vite": "^4.1.3",
+    "vite-plugin-require": "^1.1.10"
   }
 }

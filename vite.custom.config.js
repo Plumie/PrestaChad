@@ -14,14 +14,18 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, '_dev/main.js'),
       name: 'custom',
-      format: ['es'],
     },
     rollupOptions: {
       output: {
+        // name: 'custom'
+        dir: resolve(__dirname, 'assets'),
         manualChunks: false,
-        assetFileNames: '[ext]/theme[extname]',
-        chunkFileNames: 'js/custom.js',
         entryFileNames: 'js/custom.js',
+        chunkFileNames: 'js/[name].js',
+        assetFileNames: '[ext]/custom[extname]',
+        // assetFileNames: '[ext]/theme[extname]',
+        // chunkFileNames: 'js/custom.js',
+        // entryFileNames: 'js/custom.js',
       },
     },
   },
@@ -30,6 +34,7 @@ export default defineConfig({
       '@': resolve(__dirname, './_dev'),
       '@root': resolve(__dirname, './'),
       '@scripts': resolve(__dirname, './scripts'),
+      '@presta': resolve(__dirname, './../../'),
     },
   },
 });
